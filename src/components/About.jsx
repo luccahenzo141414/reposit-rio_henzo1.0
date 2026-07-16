@@ -3,24 +3,19 @@ const About = () => (
     <h2>Sobre mim</h2>
 
     <p>
-      Eae! Eu sou o Henzo Lucca, desenvolvedor front-end júnior em transição
-      para full stack, apaixonado por criar interfaces bonitas, responsivas e
-      bem organizadas, usando HTML, CSS, JavaScript e React no dia a dia.
+      Meu nome é Henzo Lucca, desenvolvedor front-end júnior em transição para full stack.
+      Trabalho com a construção de interfaces organizadas e responsivas, utilizando HTML, CSS, JavaScript e React.
     </p>
 
     <p>
-      Também venho estudando Node.js e consumo de APIs REST para conectar o front
-      com o back e construir aplicações cada vez mais completas. Tenho formação
-      técnica pelo Senac como Assistente de Desenvolvimento de Aplicativos
-      Computacionais, integrada ao Técnico em Informática, além de formações em
-      Programação Front-End, React e Engenharia de Prompt pelo Dev Club.
+      Em paralelo, venho estudando Node.js e consumo de APIs REST para integrar front-end e back-end e
+      desenvolver aplicações mais completas. Possuo formação técnica pelo Senac como Assistente de Desenvolvimento de Aplicativos Computacionais, integrada ao Técnico em Informática,
+      além de cursos em Programação Front-End, React e Engenharia de Prompt pelo Dev Club.
     </p>
 
     <p>
-      Já desenvolvi desde landing pages responsivas até aplicações em React com
-      componentes reutilizáveis, além de projetos usando Node.js e automações
-      com IA para pequenos negócios. Curto aprender coisa nova o tempo todo,
-      testar ideias na prática e transformar código em solução real.
+      Tenho experiência em projetos que vão desde landing pages responsivas até aplicações em React com componentes reutilizáveis, além de soluções com Node.js . Busco sempre escrever código claro,
+      manter boas práticas e entregar soluções que façam diferença no dia a dia de quem usa.
     </p>
   </section>
 );

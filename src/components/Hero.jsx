@@ -1,4 +1,4 @@
-import henzoPhoto from "../../assets/henzo.jpg";
+import henzoPhoto from "../../assets/henzo2.jpg";
 
 const Hero = () => (
   <section id="hero" className="hero">
