@@ -5,10 +5,10 @@ const Hero = () => (
     <div className="hero-inner">
       <div className="hero-text">
         <h1>Henzo Lucca</h1>
-        <p>Desenvolvedor Front-end Jr | Aspirante a Full Stack</p>
+        <p>Desenvolvedor Front-end Jr | Futuro Full Stack</p>
         <p>
           Construo aplicações web para pequenos negócios e projetos pessoais,
-          focando em interfaces bem feitas e integração com back-end e IA.
+          focando em interfaces responsivas  e integração com back-end e IA.
         </p>
         <button
           onClick={() =>
