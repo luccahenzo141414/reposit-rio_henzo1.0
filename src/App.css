@@ -1,0 +1,229 @@
+.app-root {
+  min-height: 100vh;
+}
+
+/* seções fundamentais */
+
+section {
+  padding: 2rem 2rem;
+}
+
+#hero,
+#about,
+#skills,
+#projects,
+#contact {
+  max-width: 900px;
+  margin: 0 auto 3rem;
+}
+
+/* HERO */
+
+.hero {
+  padding-top: 3rem;
+}
+
+.hero-inner {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-text h1 {
+  margin-top: 0;
+}
+
+.hero-text p {
+  margin-bottom: 0.5rem;
+}
+
+.hero-text button {
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 999px;
+  border: 1px solid var(--accent-border);
+  background-color: var(--accent-bg);
+  color: var(--text);
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background-color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.hero-text button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  background-color: var(--accent);
+  border-color: var(--accent);
+}
+
+.hero-photo img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--accent);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* SOBRE MIM */
+
+#about {
+  line-height: 1.7;
+}
+
+/* SKILLS */
+
+.skills {
+  text-align: center;
+}
+
+.skills h2 {
+  margin-bottom: 1rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.skill-card {
+  background-color: var(--card-bg);
+  border-radius: 0.75rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--text);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.skill-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.skill-label {
+  font-size: 0.9rem;
+}
+
+/* PROJETOS */
+
+#projects h2 {
+  margin-bottom: 1rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.projects-grid article {
+  background-color: var(--card-bg);
+  border-radius: 0.75rem;
+  padding: 1rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.projects-grid article:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.projects-grid h3 {
+  margin-top: 0;
+}
+
+.projects-grid a {
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+/* CONTATO */
+
+#contact {
+  animation: contactFade 0.6s ease-out;
+}
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1rem;
+  border-radius: 999px;
+  background-color: var(--card-bg);
+  color: var(--text);
+  text-decoration: none;
+  border: 1px solid var(--accent-border);
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    background-color 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.contact-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+  background-color: var(--accent-bg);
+  border-color: var(--accent);
+}
+
+.contact-icon {
+  font-size: 1.1rem;
+}
+
+@keyframes contactFade {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 768px) {
+  section {
+    padding: 1.5rem 1rem;
+  }
+
+  .hero-inner {
+    flex-direction: column;
+    align-items: center; /* centraliza conteúdo horizontalmente */
+    text-align: center;  /* centraliza textos */
+  }
+
+  .hero-text {
+    max-width: 500px;
+  }
+
+  .hero-photo img {
+    width: 200px;
+    height: 200px;
+    margin-top: 1.5rem;
+  }
+}
