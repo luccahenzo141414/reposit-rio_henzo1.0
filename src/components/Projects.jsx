@@ -3,15 +3,15 @@ const projects = [
     title: "API de Burgers",
     description: "Em Andamento...",
     stack: "Node.js, Express, PostgreSQL, Sequelize",
-    demo: "#", // depois você coloca o link real
-    code: "#", // depois você coloca o link do GitHub
+    demo: "#", 
+    code: "#", 
   },
   {
     title: "Sistema de cadastro de clientes do Super Mario",
     description:
       "Aplicação web simples para cadastro e listagem de clientes.",
     stack: "HTML,CSS,JS",
-    demo: "#",
+    demo: "https://super-mario-pied.vercel.app/",
     code: "https://github.com/luccahenzo141414/Super-Mario",
   },
 ];
